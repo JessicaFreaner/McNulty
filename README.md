@@ -1,4 +1,4 @@
-# McNulty - Exlporing Heart Health Data
+# McNulty - Exploring Heart Health Data
 
 Third project within the Metis Bootcamp. Asked to choose between Heart Health, Advertising, and Financial data, I choose to work on the former. Within the last year, heart health became part of my personal family health history and I jumped at the opportunity to gleam some insights.
 
