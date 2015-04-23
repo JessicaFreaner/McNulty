@@ -1,0 +1,64 @@
+
+    
+framingham_data
+
+      
+CREATE TABLE framingham_data(
+      sex DOUBLE,
+      randid DOUBLE,
+      totchol DOUBLE,
+      age DOUBLE,
+      sysbp DOUBLE,
+      diabp DOUBLE,
+      cursmoke DOUBLE,
+      cigpday DOUBLE,
+      bmi DOUBLE,
+      diabetes DOUBLE,
+      bpmeds DOUBLE,
+      heartrte DOUBLE,
+      glucose DOUBLE,
+      prevchd DOUBLE,
+      prevap DOUBLE,
+      prevmi DOUBLE,
+      prestrk DOUBLE,
+      prevhyp DOUBLE,
+      time DOUBLE,
+      period DOUBLE,
+      hdlc DOUBLE,
+      ldlc DOUBLE,
+      death DOUBLE,
+      angina DOUBLE,
+      hospmi DOUBLE,
+      mi_fchd DOUBLE,
+      anychd DOUBLE,
+      stroke DOUBLE,
+      cvd DOUBLE,
+      hyperten DOUBLE,
+      timeap DOUBLE,
+      timemi DOUBLE,
+      timemifc DOUBLE,
+      timechd DOUBLE,
+      timestrk DOUBLE,
+      timecvd DOUBLE,
+      timedth DOUBLE,
+      timehyp DOUBLE
+      );
+      
+      
+      
+      'sex', 'randid', 'totchol', 'age', 'sysbp', 'diabp', 
+                'cursmoke', 'cigpday', 'bmi', 'diabetes', 'bpmeds', 
+                'heartrte', 'glucose', 'prevchd', 'prevap', 'prevmi', 
+                'prestrk', 'prevhyp', 'time', 'period', 'hdlc', 'ldlc', 
+                'death', 'angina', 'hospmi', 'mi_fchd', 'anychd', 'stroke', 
+                'cvd', 'hyperten', 'timeap', 'timemi', 'timemifc', 
+                'timechd', 'timestrk', 'timecvd', 'timedth', 'timehyp']
+      
+framingham_data.csv
+
+
+
+LOAD DATA LOCAL INFILE "framingham_data.csv"
+    INTO TABLE framingham_data FIELDS TERMINATED BY "," ;
+    IGNORE 1 LINES;
+    

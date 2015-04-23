@@ -1,0 +1,93 @@
+mysql --local-infile=1 -u root -p
+
+# example upload to remote server
+scp [source file] [username]@[destination server]:.
+# load from remote server
+scp cool_stuff.txt sanjeev@example.com:.
+
+
+CREATE TABLE  hungarian_tidy(
+      age INT,
+      sex INT,
+      chest_pain_type INT,
+      rest_bp DOUBLE,
+      chol_mg_dl DOUBLE,
+      fast_blood_sugar INT,
+      rest_ecg INT,
+      st_max_heart_rt_ach DOUBLE,
+      st_exercise_angina INT,
+      st_depression DOUBLE,
+      st_exercise_slope INT,
+      colored_vessels DOUBLE,
+      thal_defect INT,
+      diagnosis INT,
+      hospital VARCHAR(255));
+      
+    
+hungarian_tidy
+switzerland_tidy
+cleveland_tidy
+va_tidy
+all_hospitals
+
+      
+CREATE TABLE all_hospitals(
+      age VARCHAR(255),
+      sex VARCHAR(255),
+      chest_pain_type VARCHAR(255),
+      rest_bp VARCHAR(255),
+      chol_mg_dl VARCHAR(255),
+      fast_blood_sugar VARCHAR(255),
+      rest_ecg VARCHAR(255),
+      st_max_heart_rt_ach VARCHAR(255),
+      st_exercise_angina VARCHAR(255),
+      st_depression VARCHAR(255),
+      st_exercise_slope VARCHAR(255),
+      colored_vessels VARCHAR(255),
+      thal_defect VARCHAR(255),
+      diagnosis VARCHAR(255),
+      hospital VARCHAR(255));
+      
+      
+      patient_id INT;
+      
+
+CREATE TABLE all_hospitals(
+      age INT,
+      sex INT,
+      chest_pain_type INT,
+      rest_bp DOUBLE,
+      chol_mg_dl DOUBLE,
+      fast_blood_sugar INT,
+      rest_ecg INT,
+      st_max_heart_rt_ach DOUBLE,
+      st_exercise_angina INT,
+      st_depression DOUBLE,
+      st_exercise_slope INT,
+      colored_vessels DOUBLE,
+      thal_defect INT,
+      diagnosis INT,
+      hospital VARCHAR(255))
+      patient_id INT;
+
+      
+hungarian_tidy.csv
+switzerland_tidy.csv
+cleveland_tidy.csv
+va_tidy.csv
+
+all_hospitals.csv
+
+
+
+LOAD DATA LOCAL INFILE "hungarian_tidy.csv"
+    INTO TABLE hungarian_tidy FIELDS TERMINATED BY "," IGNORE 1 LINES;
+    
+INSERT IGNORE 
+    INTO all_hospitals
+SELECT *
+    FROM va_tidy;
+    
+    
+ALTER TABLE all_hospitals
+ADD COLUMN patient_id INT PRIMARY KEY AUTO_INCREMENT;
