@@ -7,7 +7,7 @@ After initial exploration into the health dataset and into the significance (in 
 To handle longitudinal data, I read research papers on Discrete Time Survival Analysis by Willet / Singer (1993). Replicating the methodolgy, I ran discrete person-time logistic models to identify risk factors for heart health related life events and demonstrate how hazard effect size varies over time and by gender. There was a significant level of data cleaning / preprocessing for analysis. And I created an interactive D3 tool to allow users to explore how effect size changes over time and varies by condition and gender.
 
 ##Other Metis Projects:
-[Benson](jessicafreaner.github.io/Benson/ "Exploring MTA Data")
-[Luther](jessicafreaner.github.io/Luther/ "Exploring Movie Data")
-[Fletcher](jessicafreaner.github.io/Fletcher/ "Exploring Data with NLP")
-[Kojak](jessicafreaner.github.io/Kojak/ "Exploring NYC's Moving Populations")
+[Benson](http://jessicafreaner.github.io/Benson/ "Exploring MTA Data")
+[Luther](http://jessicafreaner.github.io/Luther/ "Exploring Movie Data")
+[Fletcher](http://jessicafreaner.github.io/Fletcher/ "Exploring Data with NLP")
+[Kojak](http://jessicafreaner.github.io/Kojak/ "Exploring NYC's Moving Populations")
