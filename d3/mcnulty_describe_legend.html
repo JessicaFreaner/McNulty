@@ -236,10 +236,12 @@ d3.tsv("survival_hazard_df.tsv", function(error, data) {
                 .style("opacity", newOpacity);
               d3.select(this)
                 .style("font-size", function() {
-                  if (active) {return 25}
+                  if (active) {return "25px"}
                 })
               // Update whether or not the elements are active
+              console.log(active)
               d.active = active
+              console.log(active)
            })
           .on("mouseover", function(){
               if (d.active != true) {
@@ -251,7 +253,7 @@ d3.tsv("survival_hazard_df.tsv", function(error, data) {
                   .transition()
                   .duration(50)
                   .style("font-size", function() {
-                    if (d.active != true) {return 25} 
+                    if (d.active != true) {return "25px"} 
                   })
                   ;
               }
@@ -261,7 +263,7 @@ d3.tsv("survival_hazard_df.tsv", function(error, data) {
           //Update the tooltip position and value
           d3.select("#tooltip")
             .style("left", xPosition + "px")
-            .style("top", yPosition + "px")
+            .style("top", yPosition - 30 + "px")
             .select("#value")
 
             .text( desc ) ;
@@ -280,7 +282,7 @@ d3.tsv("survival_hazard_df.tsv", function(error, data) {
                   .transition()
                   .duration(2500)
                   .style("font-size", function() {
-                    return 16
+                    return "16px"
                   }
                   )}
           //Hide the tooltip
