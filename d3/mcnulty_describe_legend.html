@@ -297,6 +297,7 @@ d3.tsv("survival_hazard_df.tsv", function(error, data) {
     .append("text")
       .attr("transform",
             "translate(" + (width/2) + ")")
+      .attr("y", -5) 
       .style("text-anchor", "middle")
       .text("Evaluation Year");
 
@@ -318,6 +319,7 @@ d3.tsv("survival_hazard_df.tsv", function(error, data) {
     .append("text")
       .attr("transform",
             "translate(" + (width/2) + ")")
+      .attr("y", -5)
       .style("text-anchor", "middle")
       .text("Evaluation Year");
 
