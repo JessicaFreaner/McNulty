@@ -9,7 +9,7 @@ After initial exploration into the health dataset and into the significance (in 
 ![Framingham](https://cloud.githubusercontent.com/assets/9892419/7461542/0e2882cc-f279-11e4-9207-1e04fe765951.png)
 ![longitudinal study](https://cloud.githubusercontent.com/assets/9892419/7461435/5cb3913a-f278-11e4-91f0-68c6bd01d4f7.jpg)
 
-To handle longitudinal data, I read research papers on Discrete Time Survival Analysis by Willet / Singer (1993). Replicating the methodolgy, I ran discrete person-time logistic models to identify risk factors for heart health related life events and demonstrate how hazard effect size varies over time and by gender. There was a significant level of data cleaning / preprocessing for analysis. And I created an interactive D3 tool to allow users to explore how effect size changes over time and varies by condition and gender.
+To handle longitudinal data, I read [research papers](https://github.com/JessicaFreaner/McNulty/tree/master/research_papers "Link to Research Papers") on [Discrete Time Survival Analysis](http://www.ats.ucla.edu/stat/mplus/seminars/DiscreteTimeSurvival/ "Discrete Time Survival Analysis") by Willet / Singer (1993). Replicating the methodolgy, I ran discrete person-time logistic models to identify risk factors for heart health related life events and demonstrate how hazard effect size varies over time and by gender. There was a significant level of data cleaning / preprocessing for analysis. And I created an interactive D3 tool to allow users to explore how effect size changes over time and varies by condition and gender.
 
 ![D3 Interactive](https://cloud.githubusercontent.com/assets/9892419/7504830/34744526-f41b-11e4-9e38-bf8089859cd3.gif)
 
