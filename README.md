@@ -13,7 +13,9 @@ To handle longitudinal data, I read [research papers](https://github.com/Jessica
 
 ![D3 Interactive](https://cloud.githubusercontent.com/assets/9892419/7504830/34744526-f41b-11e4-9e38-bf8089859cd3.gif)
 
-To visualize the effect of features, I also created a Flask App for Angina: (can be adapted to other Life Events)
+###Flask App for Angina: 
+To visualize the effect of features, I also created a Flask App for Angina ( a Heart Health Related Life Event ). Can be adapted to other Life Events explored in D3.
+
 ![Flask App](https://cloud.githubusercontent.com/assets/9892419/7620640/595be9e2-f98f-11e4-8ce1-119a166f3861.gif)
 
 ![ThisIsMetis](https://cloud.githubusercontent.com/assets/9892419/7356548/e1a3b3ac-ecf6-11e4-8fb6-be39f563742e.jpg) 
